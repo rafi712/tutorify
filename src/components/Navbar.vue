@@ -13,7 +13,7 @@
       </div>
 
       <div class="mobile-menu">
-        <img :src="toggleIcon" alt="hamburger" @click="toggleMenu" />
+        <img :src="toggleIcon" alt="menu-icon" @click="toggleMenu" />
         <Transition>
           <div class="dropdown" v-if="isActive">
             <a>Home</a>
@@ -42,8 +42,8 @@ const toggleMenu = () => {
 
 const toggleIcon = computed(() => {
   return isActive.value
-    ? '/src/assets/ci_close.svg'
-    : '/src/assets/ci_hamburger.svg'
+    ? '/src/assets/icons/ci_close.svg'
+    : '/src/assets/icons/ci_hamburger.svg'
 })
 </script>
 
@@ -51,7 +51,7 @@ const toggleIcon = computed(() => {
 header {
   position: sticky;
   top: 0;
-  padding-top: 45px;
+  padding: 45px 25px 0;
   background-color: #fff;
 
   nav {
@@ -107,6 +107,10 @@ header {
 
 .mobile-menu {
   position: relative;
+
+  img {
+    cursor: pointer;
+  }
 }
 
 .dropdown {
