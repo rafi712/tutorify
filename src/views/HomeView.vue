@@ -13,7 +13,7 @@
         <button>Try Free Lesson</button>
       </div>
       <div class="hero-image">
-        <img src="../assets/images/hero-image.png" alt="hero" />
+        <img src="@/assets/images/hero-image2.png" alt="hero" />
       </div>
     </section>
 
@@ -34,13 +34,13 @@
           ullamcorper et, ante venenatis.
         </p>
         <div class="items">
-          <img src="../assets/images/france.png" alt="france" />
-          <img src="../assets/images/germany.png" alt="germany" />
-          <img src="../assets/images/italia.png" alt="italia" />
-          <img src="../assets/images/japan.png" alt="japan" />
-          <img src="../assets/images/china.png" alt="china" />
-          <img src="../assets/images/russia.png" alt="russia" />
-          <img src="../assets/images/spain.png" alt="spain" />
+          <img src="@/assets/images/france.png" alt="france" />
+          <img src="@/assets/images/germany.png" alt="germany" />
+          <img src="@/assets/images/italia.png" alt="italia" />
+          <img src="@/assets/images/japan.png" alt="japan" />
+          <img src="@/assets/images/china.png" alt="china" />
+          <img src="@/assets/images/russia.png" alt="russia" />
+          <img src="@/assets/images/spain.png" alt="spain" />
           <div class="view-all">
             <p>View All</p>
             <img src="../assets/icons/arrow-down.svg" alt="arrow-down" />

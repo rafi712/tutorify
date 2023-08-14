@@ -13,7 +13,18 @@
       </div>
 
       <div class="mobile-menu">
-        <img :src="toggleIcon" alt="menu-icon" @click="toggleMenu" />
+        <img
+          v-if="isActive"
+          src="@/assets/icons/ci_close.svg"
+          alt="close"
+          @click="toggleMenu"
+        />
+        <img
+          v-else
+          src="@/assets/icons/ci_hamburger.svg"
+          alt="hamburger"
+          @click="toggleMenu"
+        />
         <Transition>
           <div class="dropdown" v-if="isActive">
             <a>Home</a>
@@ -42,8 +53,8 @@ const toggleMenu = () => {
 
 const toggleIcon = computed(() => {
   return isActive.value
-    ? '/src/assets/icons/ci_close.svg'
-    : '/src/assets/icons/ci_hamburger.svg'
+    ? require('@/assets/icons/ci_close.svg')
+    : require('@/assets/icons/ci_hamburger.svg')
 })
 </script>
 
