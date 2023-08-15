@@ -59,7 +59,57 @@
         </div>
       </div>
       <div class="book-image">
-        <img src="@/assets/images/Group.png" alt="" />
+        <img src="@/assets/images/book-section.png" alt="book-section" />
+      </div>
+    </section>
+
+    <section class="benefit">
+      <div class="benefit-content">
+        <h2>What Will You <span>Get</span> ?</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id interdum
+          dui mollis . Suspendisse nulla :
+        </p>
+        <div class="benefit-item">
+          <img src="../assets/icons/tick-green.svg" alt="tick" />
+          <div class="description">
+            <p>1-on-1 lessons in more than 150 languages</p>
+            <p>
+              <span>
+                Learn from certified teachers with proven experience...
+                <span class="green">read more</span>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <img src="../assets/icons/tick-green.svg" alt="tick" />
+          <div class="description">
+            <p>Practice for free with the italki community</p>
+            <p>
+              <span>
+                Develop your language skills by building connections with
+                others...
+                <span class="green">read more</span>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <img src="../assets/icons/tick-green.svg" alt="tick" />
+          <div class="description">
+            <p>Take learning beyond the classroom</p>
+            <p>
+              <span>
+                Learn from certified teachers with proven experience...
+                <span class="green">read more</span>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="benefit-image">
+        <img src="@/assets/images/benefit-section.png" alt="benefit-section" />
       </div>
     </section>
   </main>
@@ -68,7 +118,7 @@
 <script setup></script>
 
 <style lang="scss" scoped>
-// Hero section start ================
+// Hero section start ==================
 .hero {
   display: flex;
   flex-direction: column;
@@ -376,4 +426,116 @@
   }
 }
 // Book section end ====================
+
+// Benefit section start ===============
+.benefit {
+  margin-top: 20px;
+  .benefit-content {
+    h2 {
+      color: #393939;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 160%;
+      letter-spacing: 1.05px;
+
+      span {
+        color: #058e6e;
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        letter-spacing: inherit;
+      }
+    }
+
+    p {
+      margin-top: 5px;
+      color: #90a3b4;
+      font-size: 12px;
+      line-height: 200%; /* 24px */
+    }
+
+    .benefit-item {
+      margin-top: 30px;
+      padding: 11px;
+      display: flex;
+      gap: 16px;
+      align-items: start;
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 0px -2px 128px 0px rgba(5, 142, 110, 0.14);
+
+      p {
+        color: #393939;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 170%;
+
+        &:nth-of-type(2) {
+          display: list-item;
+          color: #8d8d8d;
+          font-size: 10px;
+          font-weight: 400;
+          line-height: 200%;
+          position: relative;
+          left: 11px;
+
+          .green {
+            color: #058e6e;
+          }
+        }
+      }
+    }
+  }
+
+  .benefit-image {
+    margin-top: 40px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .benefit {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 86px;
+
+    .benefit-content {
+      flex: 1;
+
+      h2 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 160%; /* 28.8px */
+      }
+
+      .benefit-item {
+        padding: 18px;
+
+        img {
+          width: 52px;
+        }
+
+        p {
+          font-size: 16px;
+
+          &:nth-of-type(2) {
+            font-size: 16px;
+            line-height: 160%; /* 22.4px */
+          }
+        }
+      }
+    }
+
+    .benefit-image {
+      flex: 1;
+    }
+  }
+}
+// Benefit section end =================
 </style>
