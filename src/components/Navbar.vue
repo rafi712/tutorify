@@ -62,6 +62,7 @@ const toggleIcon = computed(() => {
 header {
   position: sticky;
   top: 0;
+  z-index: 100;
   padding: 45px 25px 0;
   background-color: #fff;
 

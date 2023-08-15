@@ -17,10 +17,6 @@
       </div>
     </section>
 
-    <!-- <div class="offer-buttons">
-          <button class="book">Book Your Lessons</button>
-          <button class="tutor">Find Your Tutors</button>
-        </div> -->
     <section class="offer">
       <div class="offer-text">
         <h4>What do you want to learn ?</h4>
@@ -46,6 +42,24 @@
             <img src="../assets/icons/arrow-down.svg" alt="arrow-down" />
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="book">
+      <div class="book-text">
+        <h2>Purchase your awesome lessons and find your tutors</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+          habitant a tincidunt cras accumsan integer suscipit. Libero accumsan
+          eget aliquet.
+        </p>
+        <div class="book-buttons">
+          <button class="book-lessons-btn">Book Your Lessons</button>
+          <button class="tutor-btn">Find Your Tutors</button>
+        </div>
+      </div>
+      <div class="book-image">
+        <img src="@/assets/images/Group.png" alt="" />
       </div>
     </section>
   </main>
@@ -149,6 +163,11 @@
     h1 {
       font-size: 48px;
     }
+
+    p {
+      font-size: 16px;
+      line-height: 180%;
+    }
   }
 }
 
@@ -197,33 +216,6 @@
     line-height: 200%;
   }
 
-  // .offer-buttons {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   margin-top: 20px;
-
-  //   button {
-  //     width: 153px;
-  //     height: 47px;
-  //     border-radius: 16px;
-  //     padding: 10px 16px;
-  //     font-size: 12px;
-  //     font-weight: 600;
-  //   }
-
-  //   .book {
-  //     border: none;
-  //     background-color: #fb9c46;
-  //     color: #fff;
-  //   }
-
-  //   .tutor {
-  //     border: 3px #fb9c46 solid;
-  //     background-color: white;
-  //     color: #fb9c46;
-  //   }
-  // }
-
   .offer-contents {
     .items {
       margin-top: 40px;
@@ -239,11 +231,6 @@
           drop-shadow(0px -1px 16px rgba(0, 0, 0, 0.09))
           drop-shadow(0px -2.5px 32.5px rgba(0, 0, 0, 0.12))
           drop-shadow(0px -7px 89px rgba(0, 0, 0, 0.17));
-        transition: 0.3s;
-
-        &:hover {
-          transform: scale(1.1);
-        }
       }
 
       .view-all {
@@ -285,9 +272,108 @@
 
       .items {
         margin-top: 20px;
+
+        img {
+          transition: 0.3s;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
       }
     }
   }
 }
 // Offer section end ===================
+
+// Book section start ==================
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .book-text {
+    h2 {
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 160%; /* 57.6px */
+      letter-spacing: 1.26px;
+    }
+
+    p {
+      margin-top: 23px;
+      color: #90a3b4;
+      font-size: 12px;
+      line-height: 200%; /* 24px */
+    }
+
+    .book-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      button {
+        width: 153px;
+        height: 47px;
+        border-radius: 16px;
+        padding: 10px 16px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      .book-lessons-btn {
+        border: none;
+        background-color: #fb9c46;
+        color: #fff;
+      }
+
+      .tutor-btn {
+        border: 3px #fb9c46 solid;
+        background-color: white;
+        color: #fb9c46;
+      }
+    }
+  }
+
+  .book-image {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .book {
+    flex-direction: row;
+
+    .book-text {
+      h2 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 180%;
+      }
+
+      .book-buttons {
+        justify-content: start;
+        gap: 38px;
+
+        button {
+          width: 199px;
+          height: 61px;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .book-image {
+      img {
+        width: 497px;
+      }
+    }
+  }
+}
+// Book section end ====================
 </style>
