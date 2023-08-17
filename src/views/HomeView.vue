@@ -39,7 +39,7 @@
           <img src="@/assets/images/spain.png" alt="spain" />
           <div class="view-all">
             <p>View All</p>
-            <img src="../assets/icons/arrow-down.svg" alt="arrow-down" />
+            <img src="@/assets/icons/arrow-down.svg" alt="arrow-down" />
           </div>
         </div>
       </div>
@@ -71,37 +71,37 @@
           dui mollis . Suspendisse nulla :
         </p>
         <div class="benefit-item">
-          <img src="../assets/icons/tick-green.svg" alt="tick" />
+          <img src="@/assets/icons/tick-green.svg" alt="tick" />
           <div class="description">
             <p>1-on-1 lessons in more than 150 languages</p>
             <p>
               <span>
-                Learn from certified teachers with proven experience...
+                Learn from certified teachers with proven experience@.
                 <span class="green">read more</span>
               </span>
             </p>
           </div>
         </div>
         <div class="benefit-item">
-          <img src="../assets/icons/tick-green.svg" alt="tick" />
+          <img src="@/assets/icons/tick-green.svg" alt="tick" />
           <div class="description">
             <p>Practice for free with the italki community</p>
             <p>
               <span>
                 Develop your language skills by building connections with
-                others...
+                others@.
                 <span class="green">read more</span>
               </span>
             </p>
           </div>
         </div>
         <div class="benefit-item">
-          <img src="../assets/icons/tick-green.svg" alt="tick" />
+          <img src="@/assets/icons/tick-green.svg" alt="tick" />
           <div class="description">
             <p>Take learning beyond the classroom</p>
             <p>
               <span>
-                Learn from certified teachers with proven experience...
+                Learn from certified teachers with proven experience@.
                 <span class="green">read more</span>
               </span>
             </p>
@@ -110,6 +110,52 @@
       </div>
       <div class="benefit-image">
         <img src="@/assets/images/benefit-section.png" alt="benefit-section" />
+      </div>
+    </section>
+
+    <section class="how-it-works">
+      <div class="how-it-works-content">
+        <h2>Here's how it <span>works</span></h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+          habitant a tincidunt cras accumsan integer suscipit. Libero accumsan
+          eget aliquet.
+        </p>
+        <div class="steps">
+          <div class="step">
+            <img src="@/assets/icons/user-steps.svg" alt="" />
+            <div class="description">
+              <p>Find a tutor</p>
+              <p>
+                Choose your ideal teacher from over 10,000 qualified language
+                tutors.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <img src="@/assets/icons/user-steps.svg" alt="" />
+            <div class="description">
+              <p>Find a tutor</p>
+              <p>
+                Choose your ideal teacher from over 10,000 qualified language
+                tutors.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <img src="@/assets/icons/user-steps.svg" alt="" />
+            <div class="description">
+              <p>Find a tutor</p>
+              <p>
+                Choose your ideal teacher from over 10,000 qualified language
+                tutors.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="how-it-works-image">
+        <img src="@/assets/images/how-to-works-section.png" alt="" />
       </div>
     </section>
   </main>
@@ -353,7 +399,7 @@
     p {
       margin-top: 23px;
       color: #90a3b4;
-      font-size: 12px;
+      font-size: 15px;
       line-height: 200%; /* 24px */
     }
 
@@ -450,7 +496,7 @@
     p {
       margin-top: 5px;
       color: #90a3b4;
-      font-size: 12px;
+      font-size: 15px;
       line-height: 200%; /* 24px */
     }
 
@@ -466,14 +512,14 @@
 
       p {
         color: #393939;
-        font-size: 12px;
+        font-size: 15px;
         font-weight: 600;
         line-height: 170%;
 
         &:nth-of-type(2) {
           display: list-item;
           color: #8d8d8d;
-          font-size: 10px;
+          font-size: 13px;
           font-weight: 400;
           line-height: 200%;
           position: relative;
@@ -511,7 +557,7 @@
 
       p {
         font-size: 16px;
-        line-height: 160%; /* 28.8px */
+        line-height: 180%; /* 28.8px */
       }
 
       .benefit-item {
@@ -525,7 +571,7 @@
           font-size: 16px;
 
           &:nth-of-type(2) {
-            font-size: 16px;
+            font-size: 15px;
             line-height: 160%; /* 22.4px */
           }
         }
@@ -538,4 +584,131 @@
   }
 }
 // Benefit section end =================
+
+// How-it-works section start ==========
+.how-it-works {
+  margin-top: 65px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+
+  .how-it-works-content {
+    h2 {
+      color: #393939;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 160%;
+      letter-spacing: 1.05px;
+
+      span {
+        color: #fb9c46;
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        letter-spacing: inherit;
+      }
+    }
+
+    p {
+      margin-top: 15px;
+      color: #90a3b4;
+      font-size: 15px;
+      line-height: 200%; /* 24px */
+    }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 25px;
+
+      p {
+        margin-top: 0;
+      }
+      .step {
+        display: flex;
+        gap: 22px;
+        align-items: start;
+        padding: 14px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0px 0.5px 45px 0px rgba(255, 146, 47, 0.08),
+          0px 4px 357px 0px rgba(255, 146, 47, 0.15);
+
+        img {
+          width: 35px;
+          margin-top: 5px;
+        }
+
+        p {
+          color: #fb9c46;
+          font-size: 15px;
+          line-height: 170%;
+
+          &:nth-of-type(2) {
+            font-size: 13px;
+            color: #393939;
+            line-height: 170%;
+          }
+        }
+      }
+    }
+  }
+
+  .how-it-works-image {
+    img {
+      width: 325px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .how-it-works {
+    flex-direction: row;
+    gap: 100px;
+
+    .how-it-works-content {
+      flex: 1;
+
+      h2 {
+        font-size: 36px;
+        letter-spacing: 1.26px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 180%; /* 28.8px */
+      }
+
+      .steps {
+        gap: 35px;
+
+        .step {
+          img {
+            width: 40px;
+          }
+
+          p {
+            font-size: 16px;
+
+            &:nth-of-type(2) {
+              font-size: 15px;
+              line-height: 160%; /* 22.4px */
+            }
+          }
+        }
+      }
+    }
+
+    .how-it-works-image {
+      flex: 1;
+
+      img {
+        width: 517px;
+        margin-top: 75px;
+      }
+    }
+  }
+}
+// How-it-works section end ============
 </style>
